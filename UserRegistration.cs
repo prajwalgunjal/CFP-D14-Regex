@@ -47,6 +47,20 @@ namespace UserRegistration_Regex
             }
         }
 
+        public void Phone(string phno)
+        {
+            Regex Phone = new Regex("^\\+\\d{1,3}\\s?(\\(\\d{1,3}\\))?\\s?\\d{1,4}\\s?\\d{1,4}\\s?\\d{1,9}$");
+
+            if (Phone.IsMatch(phno))
+            {
+                Console.WriteLine("Valid Phone Number");
+            }
+            else
+            {
+                Console.WriteLine("not a valid Phone Number");
+            }
+        }
+
 
     }
 }

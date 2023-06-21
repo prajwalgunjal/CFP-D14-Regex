@@ -22,6 +22,12 @@
             use.Email(Email);
 
 
+            Console.WriteLine();
+            Console.Write("Enter Phone Number :- ");
+            string pnno =  Console.ReadLine();
+            use.Phone(pnno);
+
+
 
         }
 
