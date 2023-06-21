@@ -15,11 +15,24 @@ namespace UserRegistration_Regex
             Match match = Checkname.Match(name);
             if (match.Success)
             {
-                Console.WriteLine("Valid firstname");
+                Console.WriteLine("Valid Firstname");
             }
             else {
                 Console.WriteLine("not a valid FirstName");
                     }
         }
+        public void LirstName(string name)
+        {
+            Regex Checkname = new Regex("^[A-Z][a-z]{2,}");
+            if (Checkname.IsMatch(name))
+            {
+                Console.WriteLine("Valid Lastname");
+            }
+            else {
+                Console.WriteLine("not a valid FirstName");
+                    }
+        }
+
+
     }
 }

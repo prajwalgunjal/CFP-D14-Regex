@@ -5,10 +5,16 @@
         static void Main(string[] args)
         {
            UserRegistration use = new UserRegistration();
-            Console.WriteLine("Enter First name");
+            Console.Write("Enter First name :- ");
             string name = Console.ReadLine();
             use.FirstName(name);
+            Console.WriteLine();
+            Console.Write("Enter Lirst name :- ");
+            string Lname = Console.ReadLine();
+            use.FirstName(Lname);
 
         }
+
+
     }
 }
