@@ -8,10 +8,20 @@
             Console.Write("Enter First name :- ");
             string name = Console.ReadLine();
             use.FirstName(name);
+
+
             Console.WriteLine();
-            Console.Write("Enter Lirst name :- ");
+            Console.Write("Enter Last name :- ");
             string Lname = Console.ReadLine();
-            use.FirstName(Lname);
+            use.LastName(Lname);
+
+
+            Console.WriteLine();
+            Console.Write("Enter Email :- ");
+            string Email = Console.ReadLine();
+            use.Email(Email);
+
+
 
         }
 

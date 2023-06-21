@@ -21,16 +21,30 @@ namespace UserRegistration_Regex
                 Console.WriteLine("not a valid FirstName");
                     }
         }
-        public void LirstName(string name)
+        public void LastName(string name)
         {
-            Regex Checkname = new Regex("^[A-Z][a-z]{2,}");
-            if (Checkname.IsMatch(name))
+            Regex CheckLname = new Regex("^[A-Z][a-z]{2,}");
+            if (CheckLname.IsMatch(name))
             {
                 Console.WriteLine("Valid Lastname");
             }
             else {
-                Console.WriteLine("not a valid FirstName");
+                Console.WriteLine("not a valid LirstName");
                     }
+        }
+
+        public void Email(string email)
+        {
+            Regex CheckEmail = new Regex("^\\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}\\b");
+
+            if (CheckEmail.IsMatch(email))
+            {
+                Console.WriteLine("Valid Email");
+            }
+            else
+            {
+                Console.WriteLine("not a valid Email");
+            }
         }
 
 
