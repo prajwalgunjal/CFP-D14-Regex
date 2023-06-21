@@ -49,7 +49,8 @@ namespace UserRegistration_Regex
 
         public void Phone(string phno)
         {
-            Regex Phone = new Regex("^\\+\\d{1,3}\\s?(\\(\\d{1,3}\\))?\\s?\\d{1,4}\\s?\\d{1,4}\\s?\\d{1,9}$");
+            //Regex Phone = new Regex("^\\+\\d{1,3}\\s?(\\(\\d{1,3}\\))?\\s?\\d{1,4}\\s?\\d{1,4}\\s?\\d{1,9}$");
+            Regex Phone = new Regex("^(\\+?\\d{1,3})\\s\\d{10}$");
 
             if (Phone.IsMatch(phno))
             {
@@ -61,6 +62,18 @@ namespace UserRegistration_Regex
             }
         }
 
+        public void Password(string password)
+        {
+            Regex CheckPassword = new Regex("^[A-Za-z]{8,}$");
 
+            if (CheckPassword.IsMatch(password))
+            {
+                Console.WriteLine("Valid Password");
+            }
+            else
+            {
+                Console.WriteLine("not a valid Password");
+            }
+        }
     }
 }

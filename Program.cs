@@ -27,7 +27,10 @@
             string pnno =  Console.ReadLine();
             use.Phone(pnno);
 
-
+            Console.WriteLine();
+            Console.Write("Enter Password :- ");
+            string Password = Console.ReadLine();
+            use.Password(Password);
 
         }
 
